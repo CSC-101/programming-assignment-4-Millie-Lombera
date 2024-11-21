@@ -2,6 +2,10 @@ import county_demographics
 
 from data import CountyDemographics
 
+import county_demographics
+
+from data import CountyDemographics
+
 
 # Given county demographics in dictionary form, convert to an object.
 # input: county demographics information as an inconsistently typed dictionary
@@ -22,7 +26,6 @@ def convert_county(county) -> CountyDemographics:
             county['Population'],
             county['State']
         )
-
 
 # To avoid reprocessing the full data set on multiple calls of get_data.
 _converted = None
